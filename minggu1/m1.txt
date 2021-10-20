@@ -1,0 +1,4 @@
+Hal yang dipelajari minggu1 : 
+- Dijelaskan tentang macam-macam web server, database server, framework
+- Dijelaskan mengenai apa itu Git dan GitHub
+- Dijelaskan tentang Arsitektur Web dan pengerjaannya
