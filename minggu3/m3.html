@@ -410,6 +410,7 @@
       const btnPause = document.querySelector(".btn-video-pause");
       const card = document.querySelector(".card");
       const biodata = document.querySelector(".biodata");
+      const btnKrs = document.querySelector(".btn-krs");
 
       btnPlay.addEventListener("click", () => {
         btnPause.style.display = "block";
@@ -418,6 +419,7 @@
         card.style.display = "none";
         biodata.style.display = "none";
         audioMusic.style.display = "none";
+        btnKrs.style.display = "none";
 
         if (videoMusic.play()) {
           audioMusic.pause();
@@ -430,6 +432,7 @@
         btnClose.addEventListener("click", () => {
           card.style.display = "block";
           biodata.style.display = "block";
+          btnKrs.style.display = "inline";
 
           audioMusic.style.display = "inline";
           videoMusic.pause();
