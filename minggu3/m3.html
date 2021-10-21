@@ -165,8 +165,8 @@
       }
       .video-music {
         position: absolute;
-        margin-top: -585px;
-        margin-left: 255px;
+        margin-top: -530px;
+        margin-left: 240px;
         width: 850px;
         height: 550px;
         display: none;
@@ -411,6 +411,7 @@
       const card = document.querySelector(".card");
       const biodata = document.querySelector(".biodata");
       const btnKrs = document.querySelector(".btn-krs");
+      const h1 = document.querySelector(".h1");
 
       btnPlay.addEventListener("click", () => {
         btnPause.style.display = "block";
@@ -420,6 +421,7 @@
         biodata.style.display = "none";
         audioMusic.style.display = "none";
         btnKrs.style.display = "none";
+        h1.style.display = "none";
 
         if (videoMusic.play()) {
           audioMusic.pause();
@@ -433,6 +435,7 @@
           card.style.display = "block";
           biodata.style.display = "block";
           btnKrs.style.display = "inline";
+          h1.style.display = "block";
 
           audioMusic.style.display = "inline";
           videoMusic.pause();
