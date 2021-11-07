@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Times New Roman", Times, serif;
+    }
+    body {
+      width: 100%;
+      height: 100vh;
+      background-image: url("https://wallpaperaccess.com/full/2594894.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    header {
+      margin-top: 50px;
+      position: absolute;
+      margin-left: 50px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: red;
+    }
+    .navbar {
+      width: 40%;
+      margin-left: 700px;
+      display: flex;
+      padding: 25px 0;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      position: relative;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: rgb(69, 2, 90);
+    }
+    .content {
+      width: 100%;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      color: black;
+    }
+    .content h1 {
+      margin: 20px 0;
+      font-weight: 100;
+    }
+    .content p {
+      margin: 20px auto;
+      font-weight: 100;
+      line-height: 25px;
+    }
+    button {
+      width: 200px;
+      padding: 15px 0;
+      text-align: center;
+      margin: 20px 10px;
+      border-radius: 25px;
+      font-weight: bold;
+      border: 2px solid green;
+      background: transparent;
+      color: black;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    #footer p {
+      text-align: left;
+      margin-left: 100px;
+      margin-top: 400px;
+      font-weight: bold;
+      position: relative;
+    }
+    #footer button {
+      width: 150px;
+      height: 40px;
+      padding: 10px 10px 20px 10px;
+      position: absolute;
+      color: black;
+      margin-left: 130px;
+    }
+    .navbar ul li:hover {
+      text-decoration: overline;
+    }
+    .navbar ul li a:hover {
+      color: red;
+    }
+    button:hover {
+      border-top: 2px solid red;
+      border-bottom: 2px solid blue;
+      border-left: 2px solid green;
+      border-right: 2px solid purple;
+      color: yellow;
+      background-color: black;
+    }
+    #footer button:hover {
+      color: red;
+    }
+    footer{
+      margin-top: 100px;
+      margin-left: 100px;
+      font-weight: 1000;
+      font-size: 20px;
+    }
+    
+  </style>
+  <body>
+    <header>Layout HTML</header>
+    <nav>
+      <div class="navbar">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </div>
+    </nav>
+    <article>
+      <div class="content">
+      <h1>DESIGN YOUR HOUSE</h1>
+      <p>with some beautiful interior furniture design</p>
+      <button type="button"><span></span>DESIGN NOW</button>
+    </article>
+ 
+    <div id="footer">
+      <p>Subscribe to my Youtube Channel</p>
+
+      <div id="footer button">
+        <button type="button"><span></span>SUBSCRIBE</button>
+      </div>
+      <footer>Copyright &copy; Layout HTML</footer>
+    </div>
+  </div>
+  </body>
+</html>
