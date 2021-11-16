@@ -1,0 +1,3 @@
+-Mempelajari bagaimana menambakan audio pada HTML5
+-Mempelajari bagaimana menambakan video pada HTML5
+-Mempelajari bagaimana mengambil link embed youtube
