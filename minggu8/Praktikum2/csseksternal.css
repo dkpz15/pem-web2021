@@ -1,0 +1,22 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h2 {
+  color: blue;
+  font-weight: bold;
+  line-height: 20px;
+}
+p {
+  color: red;
+  font-size: 300;
+  font-style: italic;
+}
+i {
+  color: orange;
+  font-size: 300;
+  transition: 300ms ease;
+  cursor: pointer;
+}
+i:hover {
+  color: red;
+}
