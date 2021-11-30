@@ -1,0 +1,40 @@
+body {
+  background: #35a9db;
+  font-family: roboto;
+  color: #fff;
+}
+h1 {
+  width: 550px;
+}
+.kotak {
+  background: blue;
+  width: 200px;
+  height: 200px;
+  animation: animasi_kotak 3s ease 1s infinite alternate forwards;
+}
+@keyframes animasi_kotak {
+  0% {
+    margin-top: 0;
+    margin-left: 0;
+    background: red;
+  }
+  25% {
+    margin-top: 0;
+    margin-left: 100px;
+    background: blue;
+  }
+  50% {
+    margin-top: 100px;
+    margin-left: 100px;
+    background: purple;
+  }
+  75% {
+    margin-top: 100px;
+    margin-left: 0;
+    background: yellow;
+  }
+  100% {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}

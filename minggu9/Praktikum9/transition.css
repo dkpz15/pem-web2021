@@ -1,0 +1,30 @@
+body {
+  background: #35a9db;
+  font-family: roboto;
+  text-align: center;
+}
+h1 {
+  color: #fff;
+}
+div {
+  margin: 10px;
+}
+.kotak {
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  transition: width 1s ease-in-out;
+}
+.kotak:hover {
+  width: 300px;
+}
+.kotak2 {
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  transition: width 1s ease-in-out, height 2s ease-in-out 0.7s;
+}
+.kotak2:hover {
+  width: 300px;
+  height: 300px;
+}
