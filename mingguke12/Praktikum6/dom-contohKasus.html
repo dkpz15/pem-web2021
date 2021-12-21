@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Kasus</title>
+  </head>
+  <body>
+    <h1 id="h1">Aplikasi Ubah Warna</h1>
+    <label id="label1">Warna latar: </label>
+    <input type="color" id="bg-color" />
+    <br />
+    <br />
+    <label id="label2">Warna teks: </label>
+    <input type="color" id="text-color" />
+  </body>
+  <script>
+    let inputColor1 = document.querySelector("#bg-color");
+    let inputColor2 = document.querySelector("#text-color");
+    inputColor1.addEventListener("change", () => {
+      document.body.style.backgroundColor = inputColor1.value;
+    });
+    inputColor2.addEventListener("change", () => {
+      document.body.style.color = inputColor2.value;
+    });
+  </script>
+</html>
