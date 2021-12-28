@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax 2</title>
+  </head>
+  <body>
+    <h1>
+      Tutorial Ajax
+      <button id="btn-clear" onclick="clearResult()">Clear</button>
+    </h1>
+    <div id="hasil"></div>
+    <button id="button" onclick="loadContent()">Load Content</button>
+    <script>
+      function loadContent() {
+        let xhr = new XMLHttpRequest();
+        let url = "http://www.omdbapi.com/?apikey=dca61bcc&s=avengers";
+        xhr.onloadstart = function () {
+          document.getElementById("button").innerHTML = "Loading...";
+        };
+        xhr.onerror = function () {
+          alert("Gagal mengambil data");
+        };
+        xhr.onloadend = function () {
+          if (this.responseText !== "") {
+            let data = JSON.parse(this.responseText);
+            let h1 = document.createElement("h1");
+            h1.innerHTML = data.Search[0].Title;
+            let h3 = document.createElement("h3");
+            h3.innerHTML = data.Search[1].Year;
+            document.getElementById("hasil").append(h1, h3);
+            document.getElementById("button").innerHTML = "Done";
+            setTimeout(function () {
+              document.getElementById("button").innerHTML = "Load Lagi";
+            }, 3000);
+          }
+        };
+        xhr.open("GET", url, true);
+        xhr.send();
+      }
+      function clearResult() {
+        document.getElementById("hasil").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>

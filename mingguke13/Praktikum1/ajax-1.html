@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax 1</title>
+  </head>
+  <body>
+    <h1>Tutorial Ajax</h1>
+    <button type="button">Load Content</button>
+    <div id="hasil"></div>
+    <script>
+      const button = document.querySelector("button[type=button]");
+      button.addEventListener("click", () => {
+        loadContent();
+      });
+      function loadContent() {
+        let xhr = new XMLHttpRequest();
+        let url = "http://www.omdbapi.com/?apikey=dca61bcc&s=red notice";
+        xhr.onreadystatechange = function () {
+          if (this.readyState === 4 && this.status === 200) {
+            document.getElementById("hasil").innerHTML = this.responseText;
+          }
+        };
+        xhr.open("GET", url, true);
+        xhr.send();
+      }
+      3;
+    </script>
+  </body>
+</html>
