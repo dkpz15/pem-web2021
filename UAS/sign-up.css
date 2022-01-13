@@ -1,0 +1,190 @@
+:root {
+  --navbarBlue: #00ffe5;
+  --buttonBlue: #e9fff6;
+  --textBlue: #11c87d;
+  --contentBlack: #2a2727;
+  --footerBlack: #312f2f;
+  --lineColor: #00ffee;
+  --getStartedButtonFooter: #03e1a4;
+  --lineColor2: #0eff9d;
+  --SignupLoginarea: #e5f9f7;
+  --SignupLoginGoogle: #cdf2f2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  width: 1349px;
+}
+
+/* START HEADER SIGN UP */
+.header-sign-up .row1 {
+  width: 1349px;
+}
+
+.header-sign-up img {
+  width: 70px;
+  height: 70px;
+  transform: translate(570px, 45px);
+}
+.header-sign-up h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 80px;
+  margin-top: -10px;
+}
+/* END HEADER SIGN UP */
+
+/* START SIGN UP CONTENT */
+.sign-up-content {
+  width: 1349px;
+  height: 500px;
+}
+.sign-up-content .row2 {
+  width: 1349px;
+}
+.sign-up-content #teamwork-sign-up-one {
+  width: 400px;
+  height: 400px;
+  transform: translateY(180px);
+  position: fixed;
+}
+.sign-up-content .sign-up-box {
+  width: 500px;
+  height: 900px;
+  background-color: var(--SignupLoginarea);
+  margin-left: 100px;
+  margin-top: 10px;
+}
+.sign-up-content .sign-up-box h3 {
+  text-align: center;
+  font-weight: 450;
+  padding-top: 30px;
+}
+.sign-up-content .sign-up-box .box-inside {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+.sign-up-content .sign-up-box .box-inside .label-email-one {
+  margin-left: 65px;
+}
+.sign-up-content .sign-up-box .box-inside .create-password-one {
+  margin-left: 65px;
+  margin-top: 20px;
+}
+.sign-up-content .sign-up-box .box-inside .confirm-password-one {
+  margin-left: 65px;
+  margin-top: 20px;
+}
+.sign-up-content .sign-up-box .box-inside .input {
+  width: 350px;
+  height: 40px;
+  margin-left: 65px;
+  margin-top: 20px;
+}
+.sign-up-content .sign-up-box .box-inside .label-for-input {
+  padding: 8px;
+  font-size: 14px;
+  margin-left: 65px;
+  opacity: 0.6;
+}
+.sign-up-content .sign-up-box .box-inside button[type="submit"] {
+  width: 350px;
+  height: 40px;
+  margin-left: 65px;
+  margin-top: 30px;
+  border: none;
+  background-color: var(--navbarBlue);
+  font-size: 19px;
+  padding-bottom: 3px;
+  font-weight: 450;
+}
+.sign-up-content .sign-up-box .box-inside button[type="submit"]:hover {
+  opacity: 0.8;
+}
+.sign-up-content .sign-up-box .box-inside .line-one {
+  width: 400px;
+  height: 2px;
+  background-color: black;
+  margin: 35px auto 20px auto;
+  opacity: 0.3;
+}
+.sign-up-content .sign-up-box .box-inside .p-or {
+  font-size: 20px;
+  font-weight: 400;
+}
+.sign-up-content .sign-up-box .box-inside .button-google {
+  width: 350px;
+  height: 35px;
+  border: none;
+  background-color: var(--SignupLoginGoogle);
+  margin-top: 20px;
+  margin-left: 65px;
+}
+
+.sign-up-content .sign-up-box .box-inside .button-google img {
+  width: 20px;
+  height: 20px;
+  transform: translate(-20px, -2px);
+}
+.sign-up-content .sign-up-box .box-inside .button-google span {
+  margin-left: -10px;
+  font-size: 15px;
+}
+.sign-up-content .sign-up-box .box-inside .button-microsoft {
+  width: 350px;
+  height: 35px;
+  border: none;
+  background-color: var(--SignupLoginGoogle);
+  margin-top: 20px;
+  margin-left: 65px;
+}
+.sign-up-content .sign-up-box .box-inside .button-microsoft img {
+  width: 20px;
+  height: 20px;
+  transform: translate(-20px, -2px);
+}
+.sign-up-content .sign-up-box .box-inside .button-microsoft span {
+  margin-left: -10px;
+  font-size: 15px;
+}
+.sign-up-content .sign-up-box .box-inside .button-facebook {
+  width: 350px;
+  height: 35px;
+  border: none;
+  background-color: var(--SignupLoginGoogle);
+  margin-top: 20px;
+  margin-left: 65px;
+}
+.sign-up-content .sign-up-box .box-inside .button-facebook img {
+  width: 30px;
+  height: 30px;
+  transform: translate(-25px, -2px);
+}
+.sign-up-content .sign-up-box .box-inside .button-facebook span {
+  font-size: 15px;
+  margin-left: -20px;
+}
+.sign-up-content .sign-up-box .box-inside .p-account {
+  text-decoration: none;
+  margin-top: 30px;
+  font-size: 15px;
+}
+.sign-up-content .sign-up-box .box-inside .p-account:hover {
+  text-decoration: underline;
+}
+.sign-up-content .sign-up-box .box-inside h6 {
+  margin-top: 80px;
+  font-weight: 450;
+}
+.sign-up-content #teamwork-sign-up-two {
+  width: 400px;
+  height: 400px;
+  transform: translate(-50px, 150px);
+  position: fixed;
+}
+/* END SIGN UP CONTENT */

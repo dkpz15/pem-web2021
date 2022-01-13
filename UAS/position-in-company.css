@@ -1,0 +1,112 @@
+:root {
+  --navbarBlue: #00ffe5;
+  --buttonBlue: #e9fff6;
+  --textBlue: #11c87d;
+  --contentBlack: #2a2727;
+  --footerBlack: #312f2f;
+  --lineColor: #00ffee;
+  --getStartedButtonFooter: #03e1a4;
+  --lineColor2: #0eff9d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  width: 1366px;
+  height: 625px;
+}
+
+/* START SELECT POSITION COMPANY */
+.select-position-company .row1 {
+  width: 1366px;
+}
+
+.select-position-company img {
+  width: 70px;
+  height: 70px;
+  transform: translateX(80px);
+}
+.select-position-company h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: -56px;
+  margin-left: 170px;
+}
+/* END SELECT POSITION COMPANY */
+
+/* START HERO SELECT COMPANY */
+.hero-select-position-company {
+  width: 1366px;
+  margin-top: 40px;
+}
+.hero-select-position-company .row2 {
+  width: 1366px;
+}
+.hero-select-position-company h1 {
+  font-weight: 450;
+}
+.hero-select-position-company .h1-company-name {
+  margin-top: 30px;
+}
+.hero-select-position-company #select-position {
+  width: 800px;
+  height: 45px;
+  border: 1px solid var(--lineColor);
+  margin-top: 30px;
+}
+.hero-select-position-company input[type="text"] {
+  width: 800px;
+  height: 45px;
+  margin-top: 30px;
+  border: 1px solid var(--lineColor);
+}
+.hero-select-position-company button[type="submit"] {
+  width: 800px;
+  height: 45px;
+  margin-top: 30px;
+  border: none;
+  background-color: var(--navbarBlue);
+  font-size: 20px;
+  padding-bottom: 3px;
+  margin-left: 270px;
+}
+.hero-select-position-company button[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+/* END HERO SELECT COMPANY */
+
+/* START FOOTER CONTENT */
+.footer-content {
+  width: 1366px;
+  height: 102.5px;
+  background-color: var(--footerBlack);
+  margin-top: 47px;
+}
+.footer-content .row3 {
+  width: 1366px;
+  height: 102.5px;
+}
+.footer-content #h6-footer-copyright {
+  color: white;
+  margin-left: 90px;
+  margin-top: 40px;
+}
+.footer-content #img-world {
+  width: 35px;
+  height: 35px;
+  transform: translate(500px, -33px);
+}
+.footer-content #h6-english {
+  transform: translate(550px, -62px);
+  color: white;
+}
+.footer-content #img-sosmed {
+  width: 180px;
+  height: 30px;
+  transform: translate(270px, 35px);
+}
+/* END FOOTER CONTENT */
